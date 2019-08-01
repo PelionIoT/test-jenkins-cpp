@@ -15,13 +15,12 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying'
-		throw err
             }
         }
     }
     post {
         always {
-            echo 'This will always run always always always2 meh meh'
+            echo 'This will always run always always always2 meh meh meh'
         }
         success {
             echo 'This will run only if successful'
